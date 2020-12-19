@@ -1,0 +1,14 @@
+name: SampleProject
+
+conda_env: sample_env.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_path: path
+      learning_rate: {type: float, default: 0.001}
+    command: "python train.py --learning-rate {learning_rate} {data_path}"
+  validate:
+    parameters:
+      data_path: path
+    command: "python validate.py {data_path}"

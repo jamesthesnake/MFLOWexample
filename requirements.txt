@@ -1,0 +1,5 @@
+numpy
+mlflow==1.0.0
+tensorflow==1.13.1
+tensorflow-estimator==1.13.0
+tensorflow-serving-api==1.13.0
